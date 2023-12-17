@@ -14,9 +14,9 @@
  */
 export const sumAndAverage = (array) => {
   //ここに記述
-  const array = [1, 2, 3, 4, 5];
-  const totalArray = array.reduce((sum, element) => sum + element, 0);
+  const numberArray = [1, 2, 3, 4, 5];
+  const totalArray = numberArray.reduce((sum, element) => sum + element, 0);
   {
-    return totalArray / array.length;
+    return totalArray / numberArray.length;
   }
 };

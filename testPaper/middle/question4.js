@@ -17,4 +17,17 @@
  */
 export const toggleArrayElement = (array, ele) => {
   //ここに記述
+  // const array1 = [1, 2, 3, 4, 5];
+  // const array2 = [1, 2, "3", 4, 5];
+  // const target1 = array1[3];
+  // const newArray1 = array1.includes(target1);
+  // return { newArray1 };
+  // const target2 = 3;
+  // const newArray2 =
+  // if (array2.includes(target2)) {
+  //   array2.splice(target2);
+  // } else {
+  //   array2.push(target2);
+  // }
+  // return { target2 };
 };

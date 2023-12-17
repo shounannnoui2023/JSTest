@@ -21,8 +21,8 @@
 
 export const priceCalculator = (price, isTakeOut) => {
   //ここを記述
-  let price = 100;
-  function price(isTakeOut) {
-    return isTakeOut ? "108" : "110";
-  }
+  // let price = 100;
+  // function price(isTakeOut) {
+  //   return isTakeOut ? "108" : "110";
+  // }
 };

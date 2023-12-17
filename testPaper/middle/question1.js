@@ -23,19 +23,13 @@
 
 export const createUserActionString = (object) => {
   //ここに記述
-  const useNameArray = ["田中", "山田", "佐藤"];
-  const actionArray = ["挨拶しました", "洗濯しました", "勉強しました"];
-  if (useNameArray === "") {
-    useNameArray = "名無し";
-  } else if (actionArray === "") {
-    actionArray = "何もしませんでした";
-  }
-  return (
-    <>
-      <p>
-        {useNameArray}さんは{actionArray}
-      </p>
-      ;
-    </>
-  );
+  // const useNameArray = ["田中", "山田", "佐藤"];
+  // const actionArray = ["挨拶しました", "洗濯しました", "勉強しました"];
+  //   if (useNameArray === "") {
+  //     useNameArray = "名無し";
+  //   } else if (actionArray === "") {
+  //     actionArray = "何もしませんでした";
+  //   }
+  //   return  "{useNameArray}さんは{actionArray}"
+  //
 };

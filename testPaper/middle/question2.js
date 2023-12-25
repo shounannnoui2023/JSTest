@@ -21,8 +21,12 @@
 
 export const priceCalculator = (price, isTakeOut) => {
   //ここを記述
-  // let price = 100;
-  // function price(isTakeOut) {
-  //   return isTakeOut ? "108" : "110";
-  // }
+  const tax1 = price * 1.08;
+  const tax2 = price * 1.1;
+
+  const priceAfter = isTakeOut ? tax1 : tax2;
+  const afterTax = Math.floor(priceAfter);
+  return afterTax;
 };
+
+// console.log(priceCalculator(100, false));

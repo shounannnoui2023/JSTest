@@ -17,17 +17,31 @@
  */
 export const toggleArrayElement = (array, ele) => {
   //ここに記述
-  // const array1 = [1, 2, 3, 4, 5];
-  // const array2 = [1, 2, "3", 4, 5];
-  // const target1 = array1[3];
-  // const newArray1 = array1.includes(target1);
-  // return { newArray1 };
-  // const target2 = 3;
-  // const newArray2 =
-  // if (array2.includes(target2)) {
-  //   array2.splice(target2);
-  // } else {
-  //   array2.push(target2);
-  // }
-  // return { target2 };
+  let isEle = false; //eleが[]にあるかないか　true=ある　false=ない
+  const newArray1 = array.filter((num) => {
+    //ある=true ない=false
+    if (num === ele) {
+      isEle = true; //eleが[]にある
+      return false; //false=numを削除(保持しない) =>削除されたnumを除いたnum　を返す
+    }
+    return true; //else省略　true=numを削除しない(保持する) =>☆シャーロットコピーの為空の[]　が返る
+  });
+  //☆filter関数とは別で　[]にeleがなかったらpushする
+  if (isEle === false) {
+    //eleが[]にない場合
+    newArray1.push(ele); //☆filterを通し終わった新しい配列にpush
+  }
+  return newArray1; //returnしないと引数が受け取れない
 };
+
+console.log(toggleArrayElement([1, 2, 3, 4, 5], "3"));
+
+// return num !== ele;　はif文の省略方法
+// if (num === ele)
+// {
+//   return false;　//
+// } else {
+//   return true;
+// }
+
+//indexofとspliceでもできる

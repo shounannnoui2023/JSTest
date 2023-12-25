@@ -9,14 +9,13 @@
 // 1. {sum: 15,average:3}
 
 /**
- * @param {number[]} array
+//  * @param {number[]} array
  *  @return {{sum:number,average:number}}
  */
 export const sumAndAverage = (array) => {
   //ここに記述
-  const numberArray = [1, 2, 3, 4, 5];
-  const totalArray = numberArray.reduce((sum, element) => sum + element, 0);
-  {
-    return totalArray / numberArray.length;
-  }
+  const totalArray = array.reduce((sum, element) => sum + element, 0);
+  const average = totalArray / array.length;
+  return { sum: totalArray, average };
 };
+// console.log(sumAndAverage([1, 2, 3, 4, 5]));

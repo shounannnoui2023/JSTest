@@ -17,8 +17,10 @@ export const changeElementText = (elementId, text) => {
     div.innerHTML = text;
   } else {
     const newDiv = document.createElement("div");
+    newDiv.id = elementId;
+
     newDiv.innerHTML = text;
-    body.appendChild(newDiv);
+    document.body.appendChild(newDiv);
   }
 };
 

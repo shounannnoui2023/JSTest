@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // - 問題1: **指定の文字列を完成させよう**
 //    人の名前(userName)とその人が行う動作(action)の２つのプロパティを持つオブジェクトを引数に受け取り、
 //    以下のような文字列を返す関数を完成させてください。
@@ -35,4 +36,4 @@ export const createUserActionString = (object) => {
 };
 // console.log(createUserActionString({ userName: "山田", action: "洗濯" }));
 
-// !変数　変数の値がfalse (undefined,"")
+//!変数 変数の値がfalse (undefined,"")

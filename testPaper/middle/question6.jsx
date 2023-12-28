@@ -35,5 +35,3 @@ const TestComponent1 = ({ userName }) => {
 export default TestComponent1;
 
 //<span checkbox= onClick=(cssインラインスタイルで)名前に打ち消し線>名前</span>
-
-//checkbox = false(チェックなし)

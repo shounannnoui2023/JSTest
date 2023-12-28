@@ -21,6 +21,7 @@ const TestComponent1 = ({ userName }) => {
     <li>
       <input
         type="checkbox"
+        checked={isDone}
         onChange={() => {
           setIsDone(!isDone);
         }}
